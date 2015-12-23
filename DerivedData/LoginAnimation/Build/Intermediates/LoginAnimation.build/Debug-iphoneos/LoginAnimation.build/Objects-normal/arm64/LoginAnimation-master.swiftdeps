@@ -1,0 +1,6 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "b7e744c06bde45fc6df7cc5b92f59915"
+inputs: 
+- "/Users/panyq/Documents/iOS_MLJ/LoginAnimation/LoginAnimation/LoginViewController.swift"
+- "/Users/panyq/Documents/iOS_MLJ/LoginAnimation/LoginAnimation/ViewController.swift"
+- "/Users/panyq/Documents/iOS_MLJ/LoginAnimation/LoginAnimation/AppDelegate.swift"

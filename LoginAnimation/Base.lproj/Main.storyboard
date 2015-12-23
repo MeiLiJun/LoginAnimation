@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="R5M-Cu-Z3P">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="MbY-11-9f5">
+            <objects>
+                <tableViewController id="ecW-FR-Hjc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cl3-Ib-BsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="enp-7h-hWq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="2gf-ky-lNV" style="IBUITableViewCellStyleDefault" id="DeY-MK-ZvR">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DeY-MK-ZvR" id="MT8-7Q-AL5">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Log In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2gf-ky-lNV">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Y0z-D3-1Qr" kind="push" id="gZN-sy-L0l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ecW-FR-Hjc" id="OcE-uB-6h8"/>
+                            <outlet property="delegate" destination="ecW-FR-Hjc" id="RTU-Pm-6Mz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gfK-FR-EOT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzp-r6-RU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="236"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ZGS-DE-SBJ">
+            <objects>
+                <viewController id="Y0z-D3-1Qr" customClass="LoginViewController" customModule="LoginAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxw-p5-s4f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Background" id="Cbk-Qw-Idf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bubble2" id="bVH-mt-geH">
+                                <rect key="frame" x="-2" y="152" width="127" height="127"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bubble3" id="SdE-0b-pXp">
+                                <rect key="frame" x="141" y="216" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bubble4" id="xH5-jV-4Le">
+                                <rect key="frame" x="205" y="317" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bubble5" id="dFt-af-uKi">
+                                <rect key="frame" x="-44" y="299" width="201" height="205"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bubble1" id="OHl-h1-C2l">
+                                <rect key="frame" x="213" y="104" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AnimateHub" id="IcN-wV-6Xp">
+                                <rect key="frame" x="61" y="117" width="199" height="27"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Dot" id="GwV-eM-sAS">
+                                <rect key="frame" x="105" y="110" width="7" height="7"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field" id="0Z3-mT-xhr">
+                                <rect key="frame" x="35" y="184" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field" id="If3-uH-w4Y">
+                                <rect key="frame" x="35" y="254" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" alpha="0.59999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16V-OD-fpb">
+                                <rect key="frame" x="35" y="354" width="250" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log In" backgroundImage="OkBkg">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginTapped:" destination="Y0z-D3-1Qr" eventType="touchUpInside" id="7Mo-kS-oIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m6S-49-Tmz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bubble1" destination="bVH-mt-geH" id="HzJ-dV-Fza"/>
+                        <outlet property="bubble2" destination="OHl-h1-C2l" id="XUO-C4-4g2"/>
+                        <outlet property="bubble3" destination="SdE-0b-pXp" id="Aen-Pg-gdE"/>
+                        <outlet property="bubble4" destination="dFt-af-uKi" id="3Ha-42-wlc"/>
+                        <outlet property="bubble5" destination="xH5-jV-4Le" id="UIi-U4-wpF"/>
+                        <outlet property="dot" destination="GwV-eM-sAS" id="YeP-Rz-jGs"/>
+                        <outlet property="login" destination="16V-OD-fpb" id="UkQ-TH-jHy"/>
+                        <outlet property="logo" destination="IcN-wV-6Xp" id="6nS-J0-pOU"/>
+                        <outlet property="password" destination="If3-uH-w4Y" id="70r-Pl-XWx"/>
+                        <outlet property="username" destination="0Z3-mT-xhr" id="PTy-Ta-VcH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2E-Tv-XBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UHz-bs-LC9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R5M-Cu-Z3P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FOX-h5-IZW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ecW-FR-Hjc" kind="relationship" relationship="rootViewController" id="h9I-xd-3kL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vil-PH-q23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AnimateHub" width="199" height="27"/>
+        <image name="Background" width="320" height="568"/>
+        <image name="Dot" width="5" height="5"/>
+        <image name="OkBkg" width="19" height="50"/>
+        <image name="Text Field" width="250" height="40"/>
+        <image name="bubble1" width="70" height="70"/>
+        <image name="bubble2" width="127" height="127"/>
+        <image name="bubble3" width="105" height="105"/>
+        <image name="bubble4" width="115" height="115"/>
+        <image name="bubble5" width="201" height="205"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
